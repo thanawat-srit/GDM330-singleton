@@ -19,6 +19,8 @@ public class SurviveTime : Achievement
         else
         {
             data.Is_Complete = true;
+            AchievementNotifications.Instance.OnAchievementComplete?.Invoke(data);
+            gameObject.SetActive(false);
         }
     }
     protected override void OnEnable()

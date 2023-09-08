@@ -11,6 +11,8 @@ public class ClearLevel : Achievement
         if (data.Progress >= data.MaxProgress)
         {
             data.Is_Complete = true;
+            AchievementNotifications.Instance.OnAchievementComplete?.Invoke(data);
+            gameObject.SetActive(false);
         }
         else
         {

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AchievementName: Arcade Mastery
   AchievementDescription: Clear level 10.
-  MaxProgress: 10
+  MaxProgress: 2
   Progress: 0
   Is_Complete: 0
