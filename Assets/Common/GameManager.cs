@@ -8,9 +8,9 @@ namespace SuperGame
     public class GameManager : Singleton<GameManager>
     {
         [Header("Gameplay")]
-        [SerializeField] CountdownTimer levelEndTimer;
-        [SerializeField] int maxLifeCount = 3;
-        [SerializeField] int lifeCount;
+        public CountdownTimer levelEndTimer;
+        public int maxLifeCount = 3;
+        public int lifeCount;
         [SerializeField] float timeScaleToAdd = 0.1f;
 
         [Header("UI")]
@@ -20,7 +20,7 @@ namespace SuperGame
         [SerializeField] AudioSource bgm;
         
         bool isPaused;
-        bool isGameOver;
+        public bool isGameOver;
 
         protected override void InitAfterAwake()
         {
