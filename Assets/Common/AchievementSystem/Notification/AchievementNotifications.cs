@@ -11,9 +11,6 @@ namespace SuperGame{
     public class AchievementNotifications : Singleton<AchievementNotifications>
     {
         [SerializeField] private GameObject notificationPrefab;
-        // [SerializeField] private Image image;
-        // [SerializeField] private TextMeshPro _name;
-        // [SerializeField] private TextMeshPro _description;
         public Action<AchievementData> OnAchievementComplete;
         private List<AchievementData> achievementsList => AchievementManager.Instance.AchievementsList;
         protected override void InitAfterAwake()
