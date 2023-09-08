@@ -66,6 +66,7 @@ namespace SuperGame.SubwaySurfer2D
         public void TakeDamage()
         {
             playerHealth--;
+            PlayerManager.Instance.OnPlayerTakeDamage?.Invoke(1);
             DamageEffectPlayer.Instance.PlayOn(renderer);
             if (playerHealth == 0)
             {

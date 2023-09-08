@@ -45,6 +45,8 @@ namespace SuperGame.DodgeIt
             }
 
             RefreshHealth();
+
+            PlayerManager.Instance.OnPlayerTakeDamage?.Invoke(1);
         }
 
         void RefreshHealth()

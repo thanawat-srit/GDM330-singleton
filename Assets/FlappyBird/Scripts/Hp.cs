@@ -39,6 +39,7 @@ namespace SuperGame.FlappyBird
             }
 
             currenthp -= damge;
+            PlayerManager.Instance.OnPlayerTakeDamage?.Invoke(damge);
             Debug.Log("Take Damege");
             StartCoroutine(ApplyImmunity()); // เริ่มการนับเวลาอมตะ
             StartCoroutine(ChangeColorTemporarily());
