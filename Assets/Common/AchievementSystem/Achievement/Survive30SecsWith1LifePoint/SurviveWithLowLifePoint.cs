@@ -10,7 +10,6 @@ public class SurviveWithLowLifePoint : Achievement
     private void CheckProgress(float time)
     {
         GameManager gameManager = GameManager.Instance;
-
         if (gameManager.lifeCount == 1)
         {
             _surviveTime += Time.deltaTime;

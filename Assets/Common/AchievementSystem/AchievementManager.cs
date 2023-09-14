@@ -7,6 +7,7 @@ using System;
 
 namespace SuperGame
 {
+    
     public class AchievementManager : Singleton<AchievementManager>
     {
         [SerializeField] private List<GameObject> achievementsListGameObject = new List<GameObject>();
@@ -23,7 +24,7 @@ namespace SuperGame
     
 
     }
-    
+
 
 }
 

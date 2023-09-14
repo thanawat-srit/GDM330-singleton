@@ -13,6 +13,7 @@ public class AvoidDamage : Achievement
         if (currentLifeCount >= 3 && !data.Is_Complete)
         {
             data.Progress = currentLevel;
+            
         }
         if (currentLifeCount == GameManager.Instance.maxLifeCount && currentLevel >= 3)
         {

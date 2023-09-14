@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SurviveTime : Achievement
 {
+
     private void CheckProgress(float progress)
     {
         if (GameManager.Instance.isGameOver)
@@ -38,5 +39,4 @@ public class SurviveTime : Achievement
 
         }
     }
-
 }
