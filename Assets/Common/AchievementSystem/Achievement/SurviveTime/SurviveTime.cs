@@ -14,14 +14,13 @@ public class SurviveTime : Achievement
         }
         if (data.Progress < data.MaxProgress)
         {
-            data.Is_Complete = false;
+            
             data.Progress = LevelManager.Instance.CurrentLevel * GameManager.Instance.levelEndTimer.duration - progress;
         }
-        else
+        else if(data.Progress == data.MaxProgress)
         {
             data.Is_Complete = true;
             AchievementNotifications.Instance.OnAchievementComplete?.Invoke(data);
-            gameObject.SetActive(false);
         }
     }
     protected override void OnEnable()

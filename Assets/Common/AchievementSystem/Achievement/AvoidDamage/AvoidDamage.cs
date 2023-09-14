@@ -15,11 +15,11 @@ public class AvoidDamage : Achievement
             data.Progress = currentLevel;
             
         }
-        if (currentLifeCount == GameManager.Instance.maxLifeCount && currentLevel >= 3)
+        if (currentLifeCount == GameManager.Instance.maxLifeCount && currentLevel == 3)
         {
             data.Is_Complete = true;
             AchievementNotifications.Instance.OnAchievementComplete?.Invoke(data);
-            gameObject.SetActive(false);
+            
         }
     }
     protected override void OnEnable()
